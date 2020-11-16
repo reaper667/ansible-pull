@@ -1,6 +1,6 @@
-- name: Install packages
+ - name: Install packages
    apt:
-      name:
-        - htop
-        - mc
-        - tmux
+     name:
+       - htop
+       - mc
+       - tmux
