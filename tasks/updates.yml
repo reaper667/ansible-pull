@@ -1,4 +1,4 @@
- - name: Update all packages on LXC host
+ - name: Update all packages on host
    apt:
     update_cache: yes
     upgrade: dist
