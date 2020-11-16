@@ -1,0 +1,9 @@
+ - name: Update all packages on LXC host
+   apt:
+    update_cache: yes
+    upgrade: dist
+
+ - name: Remove useless packages from the cache & Remove dependencies no longer required
+   apt:
+     autoclean: yes
+     autoremove: yes
