@@ -3,7 +3,7 @@
    become: true
  
    pre_tasks:
-     - name: update repositories
+     - name: update repo & upgrade
        apt:
          update_cache: yes
          upgrade: dist
