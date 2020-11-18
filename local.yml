@@ -6,9 +6,9 @@
      - name: update repositories
        apt:
          update_cache: yes
+         upgrade: dist
        changed_when: False
    tasks:
      - include: tasks/users.yml
      - include: tasks/cron.yml
      - include: tasks/packages.yml
-     - include: tasks/updates.yml
